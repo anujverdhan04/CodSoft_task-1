@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Food Delivery</title>
+</head>
+<STYLE>
+    /* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #ff6600;
+    text-align: center;
+    padding: 80px 0;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.features {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #00aaff;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #777;
+}
+
+.cta {
+    text-align: center;
+    background-color: #ff6600;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Existing CSS styles above */
+
+.login {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.login h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 16px;
+}
+
+.login button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login button:hover {
+    background-color: #555;
+}
+
+.rating {
+    background-color: #00aaff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.rating h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.stars {
+    font-size: 24px;
+}
+
+.star {
+    cursor: pointer;
+}
+
+.rating-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+/* Existing CSS styles above */
+
+.dining {
+    background-color: #ff3366;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.dining h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.dining p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.dining .btn {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.dining .btn:hover {
+    background-color: #555;
+}
+
+
+
+</STYLE>
+<body>
+    <header>
+        <h1>Delicious Food Delivered to Your Doorstep</h1>
+        <p>Order from a variety of cuisines and enjoy a hassle-free meal experience.</p>
+    </header>
+    <section class="features">
+        <div class="feature">
+            <h2>Quick Delivery</h2>
+            <p>Get your food delivered hot and fresh in no time.</p>
+        </div>
+        <div class="feature">
+            <h2>Wide Selection</h2>
+            <p>Explore a diverse menu with options for every palate.</p>
+        </div>
+        <div class="feature">
+            <h2>Easy Ordering</h2>
+            <p>Order with a few clicks and track your delivery in real-time.</p>
+        </div>
+    </section>
+    <section class="dining">
+        <h2>Dine-In with Us</h2>
+        <p>Visit our restaurant and enjoy a delightful dining experience with us.</p>
+        <a href="menu.html" class="btn">View Dining Menu</a>
+    </section>
+    <section class="cta">
+        <h2>Order Now and Satisfy Your Cravings</h2>
+        <a href="menu.html" class="btn">View Menu</a>
+    </section>
+        <section class="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    <section class="rating">
+        <h2>Rate Your Experience</h2>
+        <p>How was your meal today?</p>
+        <div class="stars">
+            <span id="star-1" class="star">&#9733;</span>
+            <span id="star-2" class="star">&#9733;</span>
+            <span id="star-3" class="star">&#9733;</span>
+            <span id="star-4" class="star">&#9733;</span>
+            <span id="star-5" class="star">&#9733;</span>
+        </div>
+        <p id="rating-text">Your rating: 0 stars</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Food Delivery</p>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>
+
